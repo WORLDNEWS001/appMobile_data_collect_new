@@ -1,0 +1,69 @@
+/// ---- creation du Model Accident --
+ -- creation des sous model avc ces different methose
+
+
+    -- Les methodes a A cree
+
+    -- mise en place du model Json qui permettra de faire ajour et mse a jour
+    -- Creation d'une declaration d'accident
+    -- Mise a jour d'un accident declarer par la police
+    -- codage des fonctionnalité de declaration et mise a jour des donnee aux formulaires
+
+
+
+
+
+0- interface graphique UI-Design
+-  cree formulaire d'ajout des accidenté ,
+-  cree formulaire d'ajout de Vehicules,
+-  gerer , les Interaction entre les differents formulaires,
+
+
+
+
+
+1-  CREE tout les sous objet intervenant d'une declaration d'accident par le policier
+- Creation des provider de chaque Sous objet cree ,a la base de l'objet gros objet accident
+- Centraliser les provider afin de determiner les source de donnee provider precise
+
+
+
+2-  Constituer l'objet Accident
+3-  Cree l'objet paramettre
+4-  Constituer le gros objet BASE DE DONNEE qui permettra de Structurer les Accidents des declaration et les Creation ALERT
+        - creation du squellette Gros Objet Base de donnee Vide
+        - Creation du provider du gros objet BASE DE DONNEE qui permettra de COncerver les donnee
+        - creation Methode d'ajout d'un accident dans le Provider du Gros Objet ( Liste des Accident  )
+        - creation Methode Request API d'ajout d'un accident dans le Provider du Gros Objet ( Liste des Accident  )
+        - creation Methode de Modification d'un objet accident dans le Provider du Gros Objet ( Liste des Accident )
+        - creation Methode Request API de Modification d'un objet accident dans le Provider du Gros Objet ( Liste des Accident )
+        - creation Methode de Suppression d'un objet accident dans le Provider du Gros Objet ( Liste des Accident )
+        - creation Methode de Get les donnée d'un objet accident dans le Provider du Gros Objet ( Liste des Accident )
+        - creation Methode Mise a jour des etat des Accidents ( liste des accident)  du gros Objet base de donnee
+        - Creation Methode de gestion des statut de chaque accident cree en Local
+
+- creation de l'objet et de la fonction (Journal manipulation)(type manipulation , date, heure,minute,seconde)
+5- creation de l'objet et de la fonction verification new demarage
+6- Cree la fonction SAUVEGARDE ALL DATA
+7- Creation de la fonction (DEPLOIEMENT ALL DATA)
+8- creation de la focntion Renitialisation
+9-
+
+
+
+
+
+
+
+--------------------------------------------------------------
+
+Fonctionnement :
+ - Au demarage -> telecharger les donnnee de OMS  par le BACKEND ,
+                    - en cas d'echec Utilisation des Donnee enregistrer deja en Local
+                    - en cas de reussite Sauvegarder les donnee en local dans la memoure du telephone
+                -> (Verifier si il ya la connexion internet)
+                       * Si oui , Telecharger les Accidents declarer
+                           - convertir tout les accident declarer en objet accidents
+                           - Enregistrer tout ces Objets accident dans une liste des Objet accident;
+                           - Ensuite faire une Save des donnee en Local ( Function SAUVEGARDE ALL DATA )
+                           -

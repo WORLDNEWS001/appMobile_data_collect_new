@@ -1,0 +1,60 @@
+ controlsBuilder: (BuildContext context, ControlsDetails? controlsDetails) {
+          return Row(
+            children: <Widget>[
+              FloatingActionButton(
+                onPressed: controlsDetails?.onStepCancel,
+                child: Icon(Icons.arrow_back),
+              ),
+              SizedBox(width: 16.0),
+              FloatingActionButton(
+                onPressed: controlsDetails?.onStepContinue,
+                child: Icon(Icons.arrow_forward),
+              ),
+            ],
+          );
+        },
+
+
+
+
+
+
+/*
+
+class SecondStepPage extends StatefulWidget {
+  @override
+  _SecondStepPageState createState() => _SecondStepPageState();
+}
+
+class _SecondStepPageState extends State<SecondStepPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Second Step'),
+      ),
+      body: Container(
+        // Contenu spécifique à la deuxième étape
+      ),
+    );
+  }
+}
+
+
+class deuxiemetest extends StatefulWidget {
+  const deuxiemetest({Key? key}) : super(key: key);
+
+  @override
+  State<deuxiemetest> createState() => _deuxiemetestState();
+}
+
+class _deuxiemetestState extends State<deuxiemetest> {
+  @override
+  Widget build(BuildContext context) {
+    return  Container(
+      child: Text('data'),
+    );
+  }
+}
+
+*/

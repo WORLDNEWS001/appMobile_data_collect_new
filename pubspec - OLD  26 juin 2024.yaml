@@ -1,0 +1,113 @@
+name: secondtest
+description: Projet Doser
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+  select_form_field: "^2.2.0"
+
+
+  path_provider: ^2.0.15
+
+  provider: ^6.0.5
+
+  #cached_network_image: ^3.2.3
+
+
+  #sms_receiver: ^0.4.1
+  #sms_advanced: ^1.0.1
+  #sms: ^0.2.4
+  #flutter_datetime_picker: ^1.5.1
+  permission_handler: ^10.3.0
+  http: 0.13.0
+  intl: ^0.17.0
+
+  #geolocator: ^9.0.2
+
+
+
+  location: ^4.4.0
+  #flutter_polyline_points: ^1.0.0
+  #google_maps_flutter: ^2.1.9
+  url_launcher: ^6.1.5
+
+
+  #testlocate offline packages
+
+  #flutter_map: ^4.0.0
+  #latlng: ^1.0.0
+  #latlong2: ^0.8.0
+  logger: ^1.1.0
+
+  flutter_animated_dialog: ^2.0.1
+
+
+
+  image_picker: ^0.8.5
+
+  connectivity_plus: ^2.3.0
+
+  flutter_image_compress: ^2.0.0
+  #location: ^6.0.2
+  geocoding: ^3.0.0
+  dio: ^5.4.3+1
+  flutter_keycloak: ^1.1.5
+  bottom_sheet: ^2.0.0
+  flutter_painter_v2: ^2.0.0
+  screenshot: ^2.5.0
+  flutter_colorpicker: ^1.1.0
+  image_gallery_saver: ^2.0.3
+  photo_view: ^0.15.0
+  cached_network_image: ^3.2.2
+
+
+
+  #location: ^4.0.1
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/icon_doser/route/
+    - assets/icon_doser/accident_info/
+    - assets/icon_doser/car_record/
+    - assets/icon_doser/person_record/
+    - assets/icon_doser/
+    - assets/icon_doser/car_record/car_crash.png
+    - assets/icon_doser/person_record/person_crash.png
+    - assets/images/doserLogo.png
+    - assets/images/doserLogoSingle.png
+    - assets/images/acteursdoser/1.png
+    - assets/images/acteursdoser/2.png
+    - assets/images/acteursdoser/3.png
+    - assets/images/acteursdoser/4.png
+    - assets/images/acteursdoser/5.png
+    - assets/images/acteursdoser/6.png
+    - assets/images/acteursdoser/7.png
+    - assets/images/acteursdoser/8.png
+    - assets/images/acteursdoser/9.png
+    - assets/images/acteursdoser/10.png
+    - assets/images/img_app_view_default/
+    - assets/icon_doser/action_dialog/
+

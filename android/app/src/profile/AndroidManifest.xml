@@ -1,0 +1,51 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jkfutur.com.secondtest"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- The INTERNET permission is required for development. Specifically,
+         the Flutter tool needs it to communicate with the running application
+         to allow setting breakpoints, to provide hot reload, etc.
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+
+    <!-- Permission Verification de connectifiter a internet-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+
+    <!-- Permission utilisation de socket en arriere plan
+    Garder l’écran allumé : Pour des applications comme les jeux ou les applications de lecture vidéo qui nécessitent que l’écran reste allumé pendant leur utilisation.
+    Garder le CPU actif : Pour des processus en arrière-plan qui doivent continuer à s’exécuter même lorsque l’écran est éteint.
+    -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <!--  nécessaire pour demander à l’utilisateur d’ajouter votre application à la
+    liste blanche des optimisations de batterie. Cette permission est requise pour
+    permettre à l’application de fonctionner sans être limitée par les mécanismes
+    d’économie d’énergie d’Android -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+
+
+
+    <!-- Ajoutez cette ligne pour la permission de la caméra -->
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+</manifest>
